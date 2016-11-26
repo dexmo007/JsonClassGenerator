@@ -1,0 +1,3 @@
+mvn install:install-file -Dfile=evalpostfix-1.0.jar \
+     -DgroupId=com.example -DartifactId=evalpostfix \
+     -Dversion=1.0 -Dpackaging=jar

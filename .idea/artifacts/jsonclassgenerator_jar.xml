@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jsonclassgenerator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/jsonclassgenerator_jar</output-path>
+    <root id="archive" name="jsonclassgenerator.jar">
+      <element id="module-output" name="jsonclassgenerator" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
