@@ -1,5 +1,8 @@
 package de.hd.jcg.generators
 
+import java.util.ServiceLoader
+
+import scala.collection.immutable.IndexedSeq
 import scala.collection.mutable.ListBuffer
 
 /**
@@ -115,7 +118,6 @@ trait Generator {
       var off = 0
       var next = string.indexOf(ch, off)
       val list = new ListBuffer[String]
-      val splitting = true
       while (next != -1) {
         val substring = string.substring(off, next)
         // make sure commas in lists and inner objects are skipped
@@ -137,4 +139,14 @@ trait Generator {
     }
   }
 
+}
+
+object Generator {
+
+  import scala.collection.JavaConverters._
+  import scala.collection.breakOut
+
+  def load(): Iterable[Generator] = ServiceLoader.load(classOf[Generator]).asScala
+
+  def loadMap(): Map[String, Generator] = ServiceLoader.load(classOf[Generator]).asScala.map(gen => (gen.highlightClass, gen))(breakOut)
 }
