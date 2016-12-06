@@ -1,7 +1,5 @@
 package de.hd.jcg.view
 
-import java.awt.Toolkit
-import java.awt.datatransfer.StringSelection
 import java.net.URL
 import java.util.{ResourceBundle, ServiceLoader}
 import javafx.fxml.{FXML, Initializable}
