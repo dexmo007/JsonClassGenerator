@@ -1,7 +1,5 @@
 import de.hd.jcg.generators.JavaGenerator
 
-import scala.collection.mutable.ListBuffer
-
 /**
   * Created by henri on 10/27/2016.
   */
